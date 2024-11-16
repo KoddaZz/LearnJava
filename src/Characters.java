@@ -7,6 +7,7 @@ public class Characters {
     int age;
     int health;
     int attack;
+    int maxhealth;
 
     Map<Integer, String> inventory = new HashMap<>();
 
@@ -16,6 +17,7 @@ public class Characters {
         this.age = age;
         this.health = health;
         this.attack = attack;
+        this.health = maxhealth;
     }
 
     public String getName() {
@@ -32,6 +34,10 @@ public class Characters {
 
     public void setHealth(int health) {
         this.health = health;
+    }
+
+    public int maxHealth() {
+        return maxhealth;
     }
 
     public void showStatus(){

@@ -6,10 +6,15 @@ public class Main {
         Characters Fred = new Characters("Fred", 23, 50,3);
         Fred.showStatus();
 
-        Characters Agathe = new Characters("Agath", 23, 50,6);
+        Characters Agathe = new Characters("Agath", 23, 50,10);
         Agathe.showStatus();
 
         Events.battle(Agathe,Fred);
+        Fred.showStatus();
+
+        Tools.Bandages bandageFivePV = new Tools.Bandages(5);
+        Tools.applyBandages(Fred,bandageFivePV,2);
+
         Fred.showStatus();
     }
 }
