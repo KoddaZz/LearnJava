@@ -17,7 +17,7 @@ public class Characters {
         this.age = age;
         this.health = health;
         this.attack = attack;
-        this.health = maxhealth;
+        this.maxhealth = health;
     }
 
     public String getName() {
