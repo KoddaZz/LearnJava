@@ -16,5 +16,9 @@ public class Main {
         Tools.applyBandages(Fred,bandageFivePV,2);
 
         Fred.showStatus();
+
+        Fred.putInventory(1,"Pomme");
+        Fred.getSlotInInventory(1);
+        Fred.showInventory();
     }
 }
