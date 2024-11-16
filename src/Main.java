@@ -3,11 +3,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Hello and welcome!");
+        Characters Fred = new Characters("Fred", 23, 50,3);
+        Fred.showStatus();
 
-        for (int i = 1; i <= 5; i++) {
+        Characters Agathe = new Characters("Agath", 23, 50,6);
+        Agathe.showStatus();
 
-            System.out.println("i = " + i);
-        }
+        Events.battle(Agathe,Fred);
+        Fred.showStatus();
     }
 }
