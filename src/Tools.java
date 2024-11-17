@@ -27,7 +27,7 @@ public class Tools {
         }
     }
 
-    public static class Swords{
+    public static class Swords implements Item {
         String name;
         int attack_point;
         int durability;
@@ -36,6 +36,21 @@ public class Tools {
             this.name = name;
             this.attack_point = attack_point;
             this.durability = durability;
+        }
+
+        @Override
+        public String getName() {
+            return name;
+        }
+
+        @Override
+        public String getDescription() {
+            return "Attack points : " + attack_point + " durability : " + durability;
+        }
+
+        @Override
+        public String toString() {
+            return "Sword: " + name + " (Attack: " + attack_point + ", Durability: " + durability + ")";
         }
     }
 

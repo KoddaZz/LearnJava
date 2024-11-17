@@ -17,8 +17,15 @@ public class Main {
 
         Fred.showStatus();
 
-        Fred.putInventory(1,"Pomme");
-        Fred.getSlotInInventory(1);
-        Fred.showInventory();
+//        Fred.putInventory(1,"Pomme");
+//        Fred.getSlotInInventory(1);
+//        Fred.showInventory();
+
+        // Tools.Swords sword1 = new Tools.Swords("Iron Sword", 23, 50);
+
+        Tools.Swords ironSword = new Tools.Swords("Iron Sword", 3, 40);
+        Fred.displayInfo();
+        Fred.getInventory().addItem(1,ironSword);
+        Fred.displayInfo();
     }
 }
