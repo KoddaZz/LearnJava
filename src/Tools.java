@@ -26,4 +26,25 @@ public class Tools {
             }
         }
     }
+
+    public static class Swords{
+        String name;
+        int attack_point;
+        int durability;
+
+        public Swords(String name, int attack_point, int durability){
+            this.name = name;
+            this.attack_point = attack_point;
+            this.durability = durability;
+        }
+    }
+
+    public static void hitSword(Swords sword, Characters attacker,Characters defenser){
+
+
+        int newHealth = defenser.getHealth() - sword.attack_point;
+        defenser.setHealth(newHealth);
+        System.out.println(defenser.getName() + " was attacked by " + attacker.getName() +  " with " + sword.name + " and lost " + sword.attack_point + " HP !");
+
+    }
 }

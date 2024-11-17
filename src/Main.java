@@ -9,7 +9,7 @@ public class Main {
         Characters Agathe = new Characters("Agath", 23, 50,10);
         Agathe.showStatus();
 
-//        Events.battle(Agathe,Fred);
+        Events.battle(Agathe,Fred);
         Fred.showStatus();
 
         Tools.Bandages bandageFivePV = new Tools.Bandages(5);

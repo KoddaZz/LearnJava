@@ -48,7 +48,9 @@ public class Characters {
 
     public void showStatus(){
 
-        System.out.println( name + " - Health : " + health);
+        System.out.println( " - Name : " + name );
+        System.out.println( " - Age : " + age );
+        System.out.println( " - Health : " + health + " / " + maxhealth );
     }
 
     public void putInventory(int key, String value){
@@ -75,5 +77,7 @@ public class Characters {
         System.out.println("- Slot " + slot + " : " + inventory.get(slot));
 
     }
+
+    public void isInInventory(int slot, ){}
 
 }
