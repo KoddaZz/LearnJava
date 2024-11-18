@@ -4,27 +4,21 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Characters Fred = new Characters("Fred", 23, 50, 3);
+        Character Fred = new Character("Fred", 23, 50, 3);
         Fred.showStatus();
 
-        Characters Agathe = new Characters("Agath", 23, 50, 10);
+        Character Agathe = new Character("Agath", 23, 50, 10);
         Agathe.showStatus();
 
-        Events.battle(Agathe, Fred);
+        Event.battle(Agathe, Fred);
         Fred.showStatus();
 
-        Tools.Bandages bandageFivePV = new Tools.Bandages(5);
-        Tools.applyBandages(Fred, bandageFivePV, 2);
+        Tool.Bandages bandageFivePV = new Tool.Bandages(5);
+        Tool.applyBandages(Fred, bandageFivePV, 2);
 
         Fred.showStatus();
 
-//        Fred.putInventory(1,"Pomme");
-//        Fred.getSlotInInventory(1);
-//        Fred.showInventory();
-
-        // fr.jules.learnjava.Tools.Swords sword1 = new fr.jules.learnjava.Tools.Swords("Iron Sword", 23, 50);
-
-        Tools.Swords ironSword = new Tools.Swords("Iron Sword", 3, 40);
+        Tool.Swords ironSword = new Tool.Swords("Iron Sword", 3, 40);
         Fred.displayInfo();
         Fred.getInventory().addItem(1, ironSword);
         Fred.displayInfo();

@@ -1,6 +1,6 @@
 package fr.jules.learnjava;
 
-public class Characters {
+public class Character {
 
     String name;
     int age;
@@ -10,7 +10,7 @@ public class Characters {
     private final Inventory inventory;
 
 
-    public Characters(String name, int age, int health, int attack) {
+    public Character(String name, int age, int health, int attack) {
 
         this.name = name;
         this.age = age;
@@ -54,7 +54,7 @@ public class Characters {
 
     public void displayInfo() {
         System.out.println("Character: " + name + " | Health: " + health + "/" + maxHealth);
-        inventory.displayInventory();  // Affiche l'inventaire du personnage
+        inventory.displayInventory();
     }
 
 

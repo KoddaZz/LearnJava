@@ -1,6 +1,6 @@
 package fr.jules.learnjava;
 
-public class Tools {
+public class Tool {
 
     public static class Bandages {
 
@@ -17,7 +17,7 @@ public class Tools {
 
     }
 
-    public static void applyBandages(Characters receiver, Bandages bandage, int amountTimes) {
+    public static void applyBandages(Character receiver, Bandages bandage, int amountTimes) {
         for (int i = 0; i < amountTimes; i++) {
             if (receiver.maxHealth() == receiver.getHealth()) {
                 System.out.println("You can't use a bandage. Your health is full !");
@@ -56,7 +56,7 @@ public class Tools {
         }
     }
 
-    public static void hitSword(Swords sword, Characters attacker, Characters defenser) {
+    public static void hitSword(Swords sword, Character attacker, Character defenser) {
 
 
         int newHealth = defenser.getHealth() - sword.attack_point;

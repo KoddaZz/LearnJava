@@ -1,8 +1,8 @@
 package fr.jules.learnjava;
 
-public class Events {
+public class Event {
 
-    public static void battle(Characters attacker, Characters defender) {
+    public static void battle(Character attacker, Character defender) {
 
         System.out.println(attacker.getName() + " attacks " + defender.getName());
         int newHealth = defender.getHealth() - attacker.attack;
@@ -10,7 +10,7 @@ public class Events {
         System.out.println(defender.getName() + " lost " + attacker.attack + " hits points by the attack of " + attacker.getName());
     }
 
-    public static void heal(Characters attacker, Characters defender) {
+    public static void heal(Character attacker, Character defender) {
 
         System.out.println(attacker.getName() + " healed " + defender.getName() + " of ");
     }
