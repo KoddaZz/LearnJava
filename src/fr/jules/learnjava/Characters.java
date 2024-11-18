@@ -1,4 +1,4 @@
-
+package fr.jules.learnjava;
 
 public class Characters {
 
@@ -41,11 +41,11 @@ public class Characters {
         return maxHealth;
     }
 
-    public void showStatus(){
+    public void showStatus() {
 
-        System.out.println( " - Name : " + name );
-        System.out.println( " - Age : " + age );
-        System.out.println( " - Health : " + health + " / " + maxHealth );
+        System.out.println(" - Name : " + name);
+        System.out.println(" - Age : " + age);
+        System.out.println(" - Health : " + health + " / " + maxHealth);
     }
 
     public Inventory getInventory() {
@@ -74,7 +74,7 @@ public class Characters {
 
 //    public void showInventory() {
 //        for (Map.Entry<Integer, String> entry : inventory.entrySet()) {
-//            System.out.println("ID: " + entry.getKey() + " | Item: " + entry.getValue());
+//            System.out.println("ID: " + entry.getKey() + " | fr.jules.learnjava.Item: " + entry.getValue());
 //        }
 //    }
 //

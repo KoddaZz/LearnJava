@@ -1,22 +1,24 @@
+package fr.jules.learnjava;
+
 public class Tools {
 
-    public static class Bandages{
+    public static class Bandages {
 
         int numberPV;
 
-        public Bandages(int numberPV){
+        public Bandages(int numberPV) {
             this.numberPV = numberPV;
         }
 
-        public int getNumberPV(){
+        public int getNumberPV() {
             return numberPV;
         }
 
 
     }
 
-    public static void applyBandages(Characters receiver, Bandages bandage, int amountTimes){
-        for(int i = 0; i < amountTimes; i++) {
+    public static void applyBandages(Characters receiver, Bandages bandage, int amountTimes) {
+        for (int i = 0; i < amountTimes; i++) {
             if (receiver.maxHealth() == receiver.getHealth()) {
                 System.out.println("You can't use a bandage. Your health is full !");
             } else {
@@ -32,7 +34,7 @@ public class Tools {
         int attack_point;
         int durability;
 
-        public Swords(String name, int attack_point, int durability){
+        public Swords(String name, int attack_point, int durability) {
             this.name = name;
             this.attack_point = attack_point;
             this.durability = durability;
@@ -54,12 +56,12 @@ public class Tools {
         }
     }
 
-    public static void hitSword(Swords sword, Characters attacker,Characters defenser){
+    public static void hitSword(Swords sword, Characters attacker, Characters defenser) {
 
 
         int newHealth = defenser.getHealth() - sword.attack_point;
         defenser.setHealth(newHealth);
-        System.out.println(defenser.getName() + " was attacked by " + attacker.getName() +  " with " + sword.name + " and lost " + sword.attack_point + " HP !");
+        System.out.println(defenser.getName() + " was attacked by " + attacker.getName() + " with " + sword.name + " and lost " + sword.attack_point + " HP !");
 
     }
 }
