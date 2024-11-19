@@ -9,14 +9,14 @@ public class InventoryImpl implements Inventory {
     @Override
     public void addItem(Integer slot, Item item) {
         inventory.put(slot, item);
-        System.out.println("fr.jules.learnjava.Item added : " + item.toString());
+        System.out.println("Item added : " + item.toString());
     }
 
     @Override
     public void DelItem(Integer slot) {
         Item item = inventory.remove(slot);
         if (item != null) {
-            System.out.println("fr.jules.learnjava.Item deleted : " + item.toString());
+            System.out.println("Item deleted : " + item.toString());
         } else {
             System.out.println("No items found in this slot :  " + slot);
         }
